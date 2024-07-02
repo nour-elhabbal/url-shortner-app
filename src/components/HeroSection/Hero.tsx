@@ -3,8 +3,13 @@ import { workingImage } from "../../assets/images";
 
 const Hero = () => {
   return (
-    <Flex direction={["column-reverse", null, "row"]} align="center" justify="space-between">
-      <Flex direction="column" width={["90%", null, "45%"]} m="2.5%">
+    <Flex
+      direction={["column-reverse", null, "row"]}
+      align="center"
+      justify="space-between"
+      height="90vh"
+    >
+      <Flex direction="column" width={["90%", null, "45%"]} m="8%">
         <Box
           as="h1"
           fontSize={["2em", "3em", null, "4.5em"]}
@@ -33,7 +38,7 @@ const Hero = () => {
       <Box
         as="img"
         src={workingImage}
-        width={["95%", null, "45%"]}
+        width={["95%", null, "40%"]}
         maxW="760px"
         ml={["5%", null, "0"]}
       ></Box>
