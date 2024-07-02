@@ -3,7 +3,7 @@ import { useEffect, useRef } from "react";
 
 interface Props {
   closeMenu: (data: boolean) => void;
-  menuVisibility: boolean;
+  isMenuVisible: boolean;
   hamburgerRef: React.RefObject<HTMLDivElement>;
 }
 
@@ -12,20 +12,22 @@ const anchorTagStyles = {
   color: "white",
 };
 
-const Menu = ({ closeMenu: handleOutsideClick, menuVisibility, hamburgerRef }: Props) => {
+const Menu = ({ closeMenu, isMenuVisible, hamburgerRef }: Props) => {
   const menuRef = useRef<HTMLDivElement>(null);
 
   useEffect(() => {
     const handleOutsideClick = (e: any) => {
       if (!menuRef.current?.contains(e.target) && !hamburgerRef.current?.contains(e.target)) {
-        handleOutsideClick(false);
+        closeMenu(false);
       }
     };
+
     document.addEventListener("mousedown", handleOutsideClick);
+
     return () => {
       document.removeEventListener("mousedown", handleOutsideClick);
     };
-  }, [menuVisibility]);
+  }, [isMenuVisible]);
   return (
     <Flex
       ref={menuRef}

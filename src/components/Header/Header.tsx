@@ -14,7 +14,7 @@ const Header = () => {
   };
 
   return (
-    <Flex as="header" p="3% 5%" pos="relative">
+    <Flex as="header" p="4% 5%" pos="relative">
       <Flex align="center" gap="30px">
         <img src={logo} alt="LOGO" />
 
@@ -51,7 +51,7 @@ const Header = () => {
         <Hamburger toggled={isMenuVisible} toggle={setIsMenuVisible} />
       </Box>
       {isMenuVisible && (
-        <Menu closeMenu={closeMenu} menuVisibility={isMenuVisible} hamburgerRef={hamburgerRef} />
+        <Menu closeMenu={closeMenu} isMenuVisible={isMenuVisible} hamburgerRef={hamburgerRef} />
       )}
     </Flex>
   );
