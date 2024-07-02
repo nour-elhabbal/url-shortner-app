@@ -14,5 +14,5 @@ export { default as pinterestIcon } from "./icon-pinterest.svg";
 export { default as twitterIcon } from "./icon-twitter.svg";
 
 // Images
-export { default as workingImage } from "./illustration-working.svg";
+export { default as workingImage } from "./illustration-working.png";
 export { default as logo } from "./logo.svg";
