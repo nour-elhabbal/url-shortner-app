@@ -38,6 +38,7 @@ export default extendTheme({
       },
       a: {
         color: colors.neutral.GrayishViolet,
+        transition: "all 0.2s",
       },
     },
   },
