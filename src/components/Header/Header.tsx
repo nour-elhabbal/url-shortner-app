@@ -2,8 +2,8 @@ import { useRef, useState } from "react";
 import { Box, Button, Flex } from "@chakra-ui/react";
 import { Divide as Hamburger } from "hamburger-react";
 
-import { logo } from "../../assets/images";
 import Menu from "./Menu";
+import { Logo } from "../../assets/images/Icons";
 
 const Header = () => {
   const [isMenuVisible, setIsMenuVisible] = useState(false);
@@ -16,7 +16,7 @@ const Header = () => {
   return (
     <Flex as="header" p="4% 9%" pos="relative">
       <Flex align="center" gap="30px">
-        <img src={logo} alt="LOGO" />
+        <Logo />
 
         <Flex gap="15px" fontWeight="700" display={["none", null, "flex"]}>
           <Box as="a" href="#" _hover={{ color: "neutral.VeryDarkViolet" }}>

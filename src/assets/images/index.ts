@@ -1,6 +1,7 @@
+export * from "./Icons";
+
 // Backgrounds
 export { default as boostBG } from "./bg-boost-desktop.svg";
-
 export { default as shortenBG } from "./bg-shorten-desktop.svg";
 export { default as shortenBgMobile } from "./bg-shorten-mobile.svg";
 
