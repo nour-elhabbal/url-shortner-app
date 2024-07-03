@@ -9,17 +9,23 @@ const Hero = () => {
       justify="space-between"
       minH="90vh"
     >
-      <Flex direction="column" width={["90%", null, "45%"]} m="8%">
+      <Flex
+        direction="column"
+        align={["center", null, "unset"]}
+        width={["90%", null, "45%"]}
+        m="8%"
+      >
         <Box
           as="h1"
           fontSize={["2em", "3em", null, "4.5em"]}
           fontWeight="700"
           color="neutral.VeryDarkBlue"
+          textAlign={["center", null, "unset"]}
         >
           More than just shorter links
         </Box>
 
-        <Text fontSize="1.5em" color="neutral.GrayishViolet">
+        <Text fontSize="1.5em" color="neutral.GrayishViolet" textAlign={["center", null, "unset"]}>
           Build your brand's recognition and get detailed insights on how your links are preforming
         </Text>
 
