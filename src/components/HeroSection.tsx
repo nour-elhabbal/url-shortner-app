@@ -7,7 +7,7 @@ const Hero = () => {
       direction={["column-reverse", null, "row"]}
       align="center"
       justify="space-between"
-      height="90vh"
+      minH="90vh"
     >
       <Flex direction="column" width={["90%", null, "45%"]} m="8%">
         <Box
