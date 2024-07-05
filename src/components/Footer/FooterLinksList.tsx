@@ -14,8 +14,8 @@ const FooterLinksList = ({ name, links }: FooterLinksProps) => {
       <Box as="p" color="#ffff" fontWeight="700" mb="20px">
         {name}
       </Box>
-      {links.map((link) => (
-        <Box as="a" href={link.target} _hover={{ color: "primary.Cyan" }}>
+      {links.map((link, index) => (
+        <Box as="a" href={link.target} _hover={{ color: "primary.Cyan" }} key={index}>
           {link.linkName}
         </Box>
       ))}
