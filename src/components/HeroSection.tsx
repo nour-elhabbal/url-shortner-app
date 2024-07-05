@@ -7,7 +7,8 @@ const Hero = () => {
       direction={["column-reverse", null, "row"]}
       align="center"
       justify="space-between"
-      minH="90vh"
+      minH="75vh"
+      mb={["150px", null, "50px"]}
     >
       <Flex
         direction="column"
@@ -41,6 +42,7 @@ const Hero = () => {
           Get Started
         </Button>
       </Flex>
+
       <Box
         as="img"
         src={workingImage}
