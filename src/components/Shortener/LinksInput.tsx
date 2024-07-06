@@ -1,4 +1,4 @@
-import { useState } from "react";
+import { useState, useRef } from "react";
 import { Button, Flex, Input, FormControl, FormErrorMessage } from "@chakra-ui/react";
 
 import { UrlsListType } from "../../types";
@@ -68,6 +68,9 @@ const LinksInput = ({ setListItem, urlsList }: LinksInputProps) => {
 
   return (
     <Flex
+      gap="20px"
+      justify="center"
+      direction={["column", null, "row"]}
       width="85%"
       p="50px 40px"
       borderRadius="10px"
@@ -75,9 +78,7 @@ const LinksInput = ({ setListItem, urlsList }: LinksInputProps) => {
       bgColor="primary.DarkViolet"
       bgRepeat="no-repeat"
       bgSize="cover"
-      gap="20px"
-      justify="center"
-      direction={["column", null, "row"]}
+      transform="translateY(-50%)"
     >
       <FormControl
         isInvalid={error}
