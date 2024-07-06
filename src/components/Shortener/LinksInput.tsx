@@ -1,4 +1,4 @@
-import { useState, useRef } from "react";
+import { useState } from "react";
 import { Button, Flex, Input, FormControl, FormErrorMessage } from "@chakra-ui/react";
 
 import { UrlsListType } from "../../types";
