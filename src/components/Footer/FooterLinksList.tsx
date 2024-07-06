@@ -15,9 +15,16 @@ const FooterLinksList = ({ name, links }: FooterLinksProps) => {
         {name}
       </Box>
       {links.map((link, index) => (
-        <Box as="a" href={link.target} _hover={{ color: "primary.Cyan" }} key={index}>
+        <Flex
+          justify={["center", null, "unset"]}
+          as="a"
+          href={link.target}
+          _hover={{ color: "primary.Cyan" }}
+          key={index}
+          width="100%"
+        >
           {link.linkName}
-        </Box>
+        </Flex>
       ))}
     </Flex>
   );
